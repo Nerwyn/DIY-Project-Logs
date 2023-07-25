@@ -1,6 +1,10 @@
 # ESPHome Smart Curtains
 
-Using an ESP32, a stepper motor and driver, ESPHome, and Home Assistant, I created a set of completely do it yourself smart curtains. This was based on existing smart curtain projects such as those done by Everything Smart Home on YouTube. This DIY method proved to be much less expensive than commercial options for smart curtains, which range from $90 - $250.
+<video controls>
+	<source src="SmartCurtainsInAction.mp4" type="video/mp4">
+</video>
+
+Using an ESP32, a stepper motor and driver, ESPHome, and Home Assistant, I created a set of completely do it yourself smart curtains. This was based on existing smart curtain projects such as those done by DIY Machines on YouTube. This DIY method proved to be much less expensive than commercial options for smart curtains, which range from $90 - $250.
 
 These curtains are one of my favorite DIY projects as there are very few good commercial alternatives and are so convenient:
 
@@ -43,6 +47,27 @@ While you don't have to use these exact parts, these are the ones I used:
 
 <img src="SmartCurtainCircuitDiagram.png" alt="ESP32 Stepper Motor Driver Circuit" width=1000/>
 
+The capacitor from the `EN` pin to ground is to prevent a hardware bug that causes some ESP32 devkit variants to not boot when powered via `VIN`
+
+Note: the DC to DC buck convert and stepper motor driver also have to be grounded.
+
 ## Completed Circuit
 
 <img src="SmartCurtainCircuit.jpg" alt="ESP32 Stepper Motor Driver Circuit" width=800/>
+
+The completed circuit was placed in a project box with a hole cut out for the power plug and stepper motor cable.
+
+## Installing The Motor
+
+The stepper motor was installed directly underneath where the curtain rod was mounted, such that it can be hidden by the curtain and be close to a power outlet for the circuit.
+
+WARNING: do not manually actuate the motor when it is plugged into the circuit unpowered. This will turn it into a generator which can fry the circuit, speaking from experience.
+
+<img src="StepperMotorMounted.jpg" alt="Stepper Motor Wall Mounted" width=800/>
+
+I chose to mount the GT2 timing belt vertically underneath the curtain rod mount so that it would also be hidden by the curtain. The top terminates in another screw with a pulley bearing so that it can rotate freely with reduced friction.
+The timing belt track needs to be long enough so that the curtains strings can be attached to either side of it and fully open and close the curtains, and the attachment point of the strings does not go around the top or bottom of the track.
+
+<img src="G2TimingBeltMounted.jpg" alt="Timing Belt Wall Mounted" width=800/>
+
+For wiring the curtains, I went with a similar method to that done by [DIY Machines on YouTube Here](https://www.youtube.com/watch?v=JtYdPwO65WI&t=795s). The gist being that one line opens both curtains, while the other closes both curtains. These strings are attached to either side of the GT2 timing belt such that when the stepper motor is rotating in one direction it pulls the opening line while the closing line is slack, and vice versa when the stepper motor is rotating in the opposite direction. I attached the kevlar lines to the timing belt and curtains by tying several simple overhand knots in place and sealing them with super glue.
