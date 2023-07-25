@@ -2,14 +2,13 @@
 
 https://github.com/Nerwyn/DIY-Project-Logs/assets/43071698/9f2cd01e-d9e7-4367-b67b-2655434b7f7d
 
-
 Using an ESP32, a stepper motor and driver, ESPHome, and Home Assistant, I created a set of completely do it yourself smart curtains. This was based on existing smart curtain projects such as those done by DIY Machines on YouTube. This DIY method proved to be much less expensive than commercial options for smart curtains, which range from $90 - $250.
 
-These curtains are one of my favorite DIY projects as there are very few good commercial alternatives and are so convenient:
+These curtains are one of my favorite DIY projects as there are very few good commercial alternatives and they are so convenient. They allow me to be lazy by:
 
--   Opens automatically in the morning.
--   Closes at night when I go to sleep.
--   Closes when I turn on home theater mode in my living room.
+-   Opening automatically in the morning.
+-   Closing at night when I go to sleep.
+-   Closing when I want to watch a movie to turn my living room into a home theater.
 
 ## Prerequisite Software
 
@@ -55,6 +54,10 @@ Note: the DC to DC buck convert and stepper motor driver also have to be grounde
 <img src="SmartCurtainCircuit.jpg" alt="ESP32 Stepper Motor Driver Circuit" width=800/>
 
 The completed circuit was placed in a project box with a hole cut out for the power plug and stepper motor cable.
+
+## Software
+
+After provisioning the ESP32 in ESPHome, I installed my DIY curtain code to it, found in `curtains.yaml` in this repo. I originally copied this code from the comments of the Home Assistant community forums, but have been unable to find the original source. All credit for this goes to the person who shared it in the first place.
 
 ## Installing The Motor
 
