@@ -14,13 +14,13 @@ This project uses [ESPHome](https://esphome.io/index.html) hosted on [Home Assis
 
 ## Parts and Tools
 
-While you don't have to use these exact ones, these are the ones I used:
+While you don't have to use these exact parts, these are the ones I used:
 
 -   [NEMA 17 Stepper Motors](https://www.amazon.com/gp/product/B0B38H2ZMR/)
 -   [Stepper Motor Mounting Brackets](https://www.amazon.com/gp/product/B092ZSF899/)
 -   [TMC2209 Stepper Motor Drivers](https://www.amazon.com/gp/product/B08M9J8SB7/)
 -   [GT2 Timing Belt Kit](https://www.amazon.com/gp/product/B08SMFM3Z6/)
--   [ESP32 Development Boards](https://www.amazon.com/gp/product/B086MGH7JV/) - any should work, this listing says ESP-WROOM-32 but they're actually copies of the DOIT ESP32 DevKit V1
+-   [ESP32 Development Boards](https://www.amazon.com/gp/product/B086MGH7JV/) - any that is compatible with ESPHome should work, this listing says ESP-WROOM-32 but they're actually copies of the DOIT ESP32 DevKit V1
 -   [Breadboards](https://www.amazon.com/gp/product/B07LFD4LT6/) - for prototyping
 -   [Protoboards](https://www.amazon.com/gp/product/B07ZYPCXZ3) - for the finished circuit
 -   [Project Boxes](https://www.amazon.com/gp/product/B07G8S6XLV/) - for protecting the finished circuit
@@ -31,13 +31,18 @@ While you don't have to use these exact ones, these are the ones I used:
 -   [Curtain Rods](https://www.amazon.com/gp/product/B07D5CMLF7/)
 -   [Kevlar Cord](https://www.amazon.com/gp/product/B082VWRZXP/) - the stronger the better here
 -   [Super Glue](https://www.amazon.com/gp/product/B000LGPD64/)
--   [Screws](https://www.lowes.com/pd/Fas-n-Tite-8-x-3-in-Bugle-Coarse-Thread-Drywall-Screws-1-lb/999996464) - for study mounting everything
--   A drill or impact driver, screw driver, and stud finder
+-   [Spools](https://www.amazon.com/gp/product/B08GJ1PP9T/) - to wind the kevlar line around, I haven't switched to these yet but plan to the next time my kevlar line breaks
+-   [Soldering iron](https://www.amazon.com/gp/product/B07RZV2DW8/) - I like this one since it is grounded and affordable
+-   [Wire](https://www.amazon.com/gp/product/B08BBXTBL7/)
+-   [Screws](https://www.lowes.com/pd/Fas-n-Tite-8-x-3-in-Bugle-Coarse-Thread-Drywall-Screws-1-lb/999996464) - for stud mounting everything
+-   A drill or impact driver
+-   Screw driver
+-   Stud finder
 
 ## Circuit Diagram
 
-TODO
+<img src="SmartCurtainCircuitDiagram.png" alt="ESP32 Stepper Motor Driver Circuit" width=1000/>
 
 ## Completed Circuit
 
-<img src="SmartCurtainCircuit.jpg" alt="ESP32 Stepper Motor Driver Circuit" width=500/>
+<img src="SmartCurtainCircuit.jpg" alt="ESP32 Stepper Motor Driver Circuit" width=800/>

@@ -86,7 +86,7 @@ stepper:
     id: bedroom_curtain_stepper
     dir_pin: GPIO16
     step_pin: GPIO17
-    max_speed: 2000 steps/s # Change depending on how fast you want your curtains to go / how fast your circuit can handle
+    max_speed: 2000 steps/s # Change depending on how fast you want your curtains to go / how fast your setup can handle
     acceleration: inf
     deceleration: inf
     
