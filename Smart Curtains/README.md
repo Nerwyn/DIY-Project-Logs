@@ -1,6 +1,6 @@
 # ESPHome Smart Curtains
 
-https://github.com/Nerwyn/DIY-Project-Logs/assets/43071698/9f2cd01e-d9e7-4367-b67b-2655434b7f7d
+[SmartCurtainsInAction.webm](https://github.com/Nerwyn/DIY-Project-Logs/assets/43071698/09a838dd-227e-4ae3-a338-5901e8910b0b)
 
 Using an ESP32, a stepper motor and driver, ESPHome, and Home Assistant, I created a set of completely do it yourself smart curtains. This was based on existing smart curtain projects such as those done by DIY Machines on YouTube. This DIY method proved to be much less expensive than commercial options for smart curtains, which range from $90 - $250.
 
